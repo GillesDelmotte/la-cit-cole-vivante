@@ -1,0 +1,106 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container{
+   padding-top: 70vh;
+}
+
+.hidden{
+    display: none;
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(70, 97, 110);
+    color: white;
+    padding: 30px 100px; 
+    font-size: 16px;
+    a{
+        color: white;
+    }
+    
+}
+
+.flex__para{
+    margin: 30px 110px;
+    line-height: 27px;
+    font-weight: 400;
+}
+
+.flex__img{
+    margin: 70px 0;
+    img{
+        width: 100%;
+        height: auto;
+    } 
+}
+
+.wpcf7-form{
+    background-color: rgb(70, 97, 110);
+    padding: 30px 0 100px;
+
+    .test{
+        margin: 0 auto;
+        display: block;
+        width: 60%;
+        color: white;
+        margin-top: 30px;
+        font-size: 20px;
+
+    }
+
+    input, textarea {
+        border: none;
+        width: 60%;
+        margin: 0 auto;
+        display: block;
+        padding: 10px;
+        font-size: 20px;
+        border-radius: 2px;
+        box-shadow: 2px 2px 20px 2px rgba(0, 0, 0, 0.2);
+
+    }
+
+    .wpcf7-not-valid-tip{
+        width: 60%;
+        margin: 0 auto;
+        display: block;
+        padding: 10px;
+        font-size: 20px; 
+        color:rgb(255, 100, 100);
+    }
+
+    textarea{
+        margin-bottom: 50px;
+    }
+
+
+}
+
+
+@media(max-width: 950px){
+    footer{
+        padding: 30px 50px;
+    }
+
+    .flex__para{
+        margin: 30px 50px;
+
+    }
+}
+@media(max-width: 780px){
+    footer{
+        flex-direction: column;
+        text-align: center;
+        a{
+            margin-top: 10px;
+        }
+        
+    }
+}
+
+.screen-reader-response, .wpcf7-response-output{
+    display: none;
+}

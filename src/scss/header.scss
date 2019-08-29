@@ -1,0 +1,42 @@
+header{
+    padding: 15px 15px 9px;
+    position: fixed;
+    right: 20px;
+    top: 20px;
+    background-color: rgb(70, 97, 110);
+    border-radius: 3px;
+    box-shadow: 2px 2px 20px 2px rgba(0, 0, 0, 0.2);
+}
+
+#menu-main-menu{
+    display: flex;
+    li{
+        list-style-type: none;
+        margin: 0 8px;
+        display: inline;
+        a{
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            display: flex;
+            flex-direction: column;
+            &::after{
+                content:"";
+                height: 1px;
+                width: 0;
+                background-color: white;
+                margin-top: 5px;
+                transition: all 0.3s;
+            
+            }
+            &:hover::after{
+                width: 100%;
+                transition: all 0.3s;
+            }
+        }
+    }
+    li.current-menu-item a::after {
+        width: 100%;
+    }
+}
+
